@@ -1,0 +1,21 @@
+ uvicorn main:app --reload
+
+ post : - http://127.0.0.1:8000/run
+
+ json 
+
+ 
+ {
+  "input": "Email padh ke Jira task bana aur Slack pe update bhej"
+}
+
+
+
+
+
+uvicorn main:app --reload
+
+Invoke-WebRequest -Uri "http://127.0.0.1:8000/run" -Method POST -Body '{"task": "Slack pe hello bhejo"}' -ContentType "application/json" -UseBasicParsing
+
+Invoke-WebRequest -Uri "http://127.0.0.1:8000/run" -Method POST -Body '{"task": "Slack pe hello bhejo"}' -ContentType "application/json" -UseBasicParsing
+

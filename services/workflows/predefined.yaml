@@ -1,0 +1,9 @@
+email_to_jira:
+  - tool: email.read
+  - tool: jira.create
+    params:
+      title: "Follow-up Task"
+  - tool: slack.post
+    params:
+      channel: "#alerts"
+      text: "Jira task created"
